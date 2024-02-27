@@ -3,12 +3,12 @@ import ModalHeader from "../Header/ModalHeader";
 import ModalFooter from "../Footer/ModalFooter";
 
 const Modal = ({ children }) => {
-	const [isOpen, setIsOpen] = useState(false);
-	const [file, setIsFile] = useState(false);
+	// const [isOpen, setIsOpen] = useState(false);
+	// const [file, setIsFile] = useState(false);
 
-	const handleClose = () => {
-		setIsOpen(false);
-	};
+	// const handleClose = () => {
+	// 	setIsOpen(false);
+	// };
 	return (
 		<div
 			className=''
