@@ -7,6 +7,7 @@ const UploadDocument = () => {
 	const [file, setFile] = useState(null);
 	const [uploadError, setErrorUpload] = useState(null);
 	const [size, setSize] = useState(null);
+	
 
 
 	useEffect(() => {
@@ -19,6 +20,16 @@ const UploadDocument = () => {
 	const handleBrowseClick = () => {
 		const fileInput = document.getElementById("fileInput");
 		fileInput.click();
+	};
+
+	const handleFileChange = (e) => {
+		const file = e.target.files[0];
+		if (file.name.endsWith(".csv")) {
+			setErrorUpload(null);
+			setFile(file);
+		} else {
+			setErrorUpload("Invalid file type");
+		}
 	};
 	
 	const dropHandler = (e) => {
@@ -59,7 +70,7 @@ const UploadDocument = () => {
 			<p className='w-fit border-t-2 border-[#E9EAEF] border-solid pt-2.5 text-[#1B3B59] font-extrabold text-[0.65rem]'>
 				Select a manifest that you'd like to import
 			</p>
-			<DropZone handleBrowseClick={handleBrowseClick} dropHandler={dropHandler} dragOverHandler={dragOverHandler} uploadError={uploadError}/>
+			<DropZone handleBrowseClick={handleBrowseClick} dropHandler={dropHandler} dragOverHandler={dragOverHandler} handleFileChange={handleFileChange} uploadError={uploadError}/>
 			<UploadProgress file={file} size={size} />
 		</div>
 	);

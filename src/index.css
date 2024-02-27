@@ -56,6 +56,8 @@ table {
 }
 [type='radio'] {
     color: #1D3E6E;
+	height: 0.7rem;
+    width: 0.7rem;
 }
 [type='radio']:focus {
     --tw-ring-color: #1D3E6E;
