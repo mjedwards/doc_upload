@@ -44,7 +44,7 @@ const ClientOptions = () => {
 					))}
 				</div>
 			</fieldset>
-			{testingCenters.map(center => <TestCenters id={center.id} label={center.label} options={center.options} />)}
+			{testingCenters.map(center => <TestCenters key={center.id} id={center.id} label={center.label} options={center.options} />)}
 		</div>
 	);
 };

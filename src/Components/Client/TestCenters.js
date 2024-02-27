@@ -16,7 +16,7 @@ const TestCenters = ({id, label, options}) => {
 						className='mt-2  w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-[#1B3B59] ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-[#1B3B59] sm:text-[0.65rem] sm:leading-6'
 						defaultValue='Select Client'>
 						<option>Select Client</option>
-                        {options.map(choice => <option>{choice}</option>)}
+                        {options.map((choice, idx) => <option key={idx}>{choice}</option>)}
 					</select>
 					<BsClock size='20' className="clock"/>
 				</div>
