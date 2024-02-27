@@ -30,7 +30,7 @@ const ToleranceWindow = () => {
 					<p className="text-[#5A7187] text-[0.625rem] font-bold">Toggle {!enabled ? "OFF" : "ON"}</p>
 				</div>
 				<div className="flex flex-row items-center gap-2">
-					<BsClock />
+					<BsClock className="rotate-svg"/>
 					<p className="text-[#5A7187] text-[0.625rem] font-bold">Select Tolerance Level</p>
 				</div>
 			</div>

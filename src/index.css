@@ -68,3 +68,7 @@ table {
 .clock path {
 	fill: #1B3B59 !important;
 }
+
+.rotate-svg {
+	transform: rotate(133deg);
+}

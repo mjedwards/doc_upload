@@ -18,7 +18,7 @@ const TestCenters = ({id, label, options}) => {
 						<option>Select Client</option>
                         {options.map((choice, idx) => <option key={idx}>{choice}</option>)}
 					</select>
-					<BsClock size='20' className="clock"/>
+					<BsClock size='20' className="clock rotate-svg"/>
 				</div>
 			</div>
   )
