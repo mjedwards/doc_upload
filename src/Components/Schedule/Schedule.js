@@ -8,13 +8,13 @@ const Schedule = () => {
 	];
 
 	return (
-		<div className="py-1.5">
-			<p className='text-[#1B3B59] font-bold'>
+		<div className="pt-1.5 pb-[0.80rem]">
+			<p className='text-[#1B3B59] font-extrabold text-[0.65rem]'>
 				Split schedule using social distancing?
 			</p>
-			<fieldset className=' my-3'>
+			<fieldset className=' mt-[0.30rem]'>
 				<legend className='sr-only'>Schedule Options</legend>
-				<div className='space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0'>
+				<div className='space-y-4 sm:flex sm:items-center sm:space-x-3 sm:space-y-0'>
 					{options.map((option) => (
 						<div key={option.id} className='flex items-center'>
 							<input
@@ -31,7 +31,7 @@ const Schedule = () => {
 							/>
 							<label
 								htmlFor={option.id}
-								className='ml-3 text-sm font-medium leading-6 text-gray-900'>
+								className='ml-2 text-[0.65rem] font-medium leading-6 text-gray-900'>
 								{option.title}
 							</label>
 						</div>

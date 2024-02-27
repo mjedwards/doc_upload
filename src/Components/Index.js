@@ -12,13 +12,13 @@ function ManifestComponent() {
 	return (
 		<div>
 			<Modal>
-				<div className='right-side w-[57%] p-5 flex flex-col gap-4'>
+				<div className='right-side w-[57%] pb-5 flex flex-col gap-3'>
 					<SelectDropdown />
 					<UploadDocument />
 					<ElapseData />
 					<ToleranceWindow />
 				</div>
-				<div className='left-side w-[43%] p-5'>
+				<div className='left-side w-[43%] pb-5 pl-[28px]'>
 					<Schedule />
 					<LocationCheck />
 					<ClientOptions />
